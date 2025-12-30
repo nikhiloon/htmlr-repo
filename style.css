@@ -1,0 +1,234 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e23744; /* Zomato Red */
+    padding: 10px 30px;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Styling - smaller */
+.logo img {
+    height: 32px; /* smaller logo */
+    width: auto;
+    display: block;
+}
+
+/* Navigation Links */
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffd1d1;
+}
+
+/* Hero Section */
+main section img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #e23744;
+    font-weight: 600;
+}
+
+/* Search Box */
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-box input {
+    width: 50%;
+    padding: 15px;
+    border: none;
+    border-radius: 30px 0 0 30px;
+    outline: none;
+    font-size: 1rem;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.search-box button {
+    padding: 15px 25px;
+    background-color: #e23744;
+    color: #fff;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #b71c1c;
+}
+
+/* Info Section */
+.info {
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 900px;
+    text-align: center;
+    background: linear-gradient(135deg, #fff5f5, #ffe5e5);
+    border-radius: 15px;
+    box-shadow: 0px 5px 20px rgba(226, 55, 68, 0.2);
+}
+
+.info h2 {
+    color: #e23744;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.info p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Decorative underline below heading */
+.info h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #e23744;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/* Animated Food Icons */
+.food-icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.food-icons span {
+    font-size: 2.5rem;
+    animation: bounce 1.5s infinite;
+    display: inline-block;
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* Different delays for each icon */
+.food-icons span:nth-child(1) { animation-delay: 0s; }
+.food-icons span:nth-child(2) { animation-delay: 0.2s; }
+.food-icons span:nth-child(3) { animation-delay: 0.4s; }
+.food-icons span:nth-child(4) { animation-delay: 0.6s; }
+.food-icons span:nth-child(5) { animation-delay: 0.8s; }
+
+/* Restaurant Cards */
+.restaurant-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #fff;
+    border-radius: 15px;
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #e23744;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.card button {
+    background-color: #e23744;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #b71c1c;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #e23744;
+    color: #fff;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 0.9rem;
+}
